@@ -1,15 +1,13 @@
 const songs = [
-            <p>${song.artist} · ${song.mood}</p>
-          </div>
-        </div>
-
-        <button onclick="selectSong(${index})">▶</button>
-
-      </div>
-
-    `;
-  });
+ {
+  title: "첫 만남은 계획대로 되지 않아",
+  artist: "TWS",
+  mood: "기분좋음",
+  file: "music/tws_plot_twist.mp3",
+  cover: "covers/tws_plot_twist.jpg"
 }
+];
+
 
 function selectSong(index) {
   currentSong = index;
