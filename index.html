@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- 상단 -->
+    <div class="top-bar">
+      <h1>🎧 My Playlist</h1>
+      <p>DAY6 & TWS Mood Player</p>
+    </div>
+
+    <!-- 메인 플레이어 -->
+    <div class="player-card">
+
+      <div class="cover-wrap">
+        <img id="cover" src="covers/day6_you_were_beautiful.jpg" alt="cover" />
+      </div>
+
+      <div class="song-info">
+        <h2 id="title">예뻤어</h2>
+        <p id="artist">DAY6</p>
+      </div>
+
+      <audio id="audio"></audio>
+
+      <!-- 진행바 -->
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <div class="time-wrap">
+        <span id="current-time">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+
+      <!-- 컨트롤 -->
+      <div class="controls">
+        <button id="prev">⏮</button>
+        <button id="play">▶</button>
+        <button id="next">⏭</button>
+      </div>
+
+      <!-- 추가 기능 -->
+      <div class="extra-controls">
+        <button id="shuffle-btn">🔀 랜덤</button>
+      </div>
+
+    </div>
+
+    <!-- 분위기 필터 -->
+    <div class="mood-section">
+      <h3>오늘의 분위기</h3>
+
+      <div class="moods">
+        <button onclick="filterSongs('전체')">전체</button>
+        <button onclick="filterSongs('새벽감성')">🌙 새벽감성</button>
+        <button onclick="filterSongs('기분좋음')">😊 기분좋음</button>
+        <button onclick="filterSongs('드라이브')">🚗 드라이브</button>
+        <button onclick="filterSongs('우울')">💔 우울</button>
+      </div>
+    </div>
+
+    <!-- 플레이리스트 -->
+    <div class="playlist-section">
+      <h3>플레이리스트</h3>
+      <div id="playlist"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

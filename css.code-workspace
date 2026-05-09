@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Downloads/myongdo_main/myongdo/css"
+		},
+		{
+			"path": "../Downloads/myongdo_main/myongdo/js"
+		},
+		{
+			"path": "../Downloads/myongdo_main/myongdo/{css,js,images,about,guide,business,news,member}"
+		}
+	]
+}
