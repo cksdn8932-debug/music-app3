@@ -1,12 +1,20 @@
 const songs = [
- {
+
+{
   title: "첫 만남은 계획대로 되지 않아",
   artist: "TWS",
   mood: "기분좋음",
   file: "music/tws_plot_twist.mp3",
   cover: "covers/tws_plot_twist.jpg"
 }
+
 ];
+
+const audio = document.getElementById('audio');
+
+audio.src = songs[0].file;
+
+audio.play();
 
 
 function selectSong(index) {
