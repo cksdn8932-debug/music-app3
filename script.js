@@ -1,3 +1,4 @@
+const playlist = document.getElementById('playlist');
 const songs = [
 
 {
@@ -6,6 +7,70 @@ const songs = [
   mood: "기분좋음",
   file: "music/tws_plot_twist.mp3",
   cover: "covers/tws_plot_twist.jpg"
+},
+
+{
+  title: "HAPPY",
+  artist: "DAY6",
+  mood: "기분좋음",
+  file: "music/DAY6_HAPPY.mp3",
+  cover: "covers/DAY6_HAPPY.jpg"
+},
+
+{
+  title: "CONGRATULATIONS",
+  artist: "DAY6",
+  mood: "새벽감성",
+  file: "music/DAY6_CONGRATULATIONS.mp3",
+  cover: "covers/DAY6_CONGRATULATIONS.jpg"
+},
+
+{
+  title: "ILOVEDYOU",
+  artist: "DAY6",
+  mood: "새벽감성",
+  file: "music/DAY6_ILOVEDYOU.mp3",
+  cover: "covers/DAY6_ILOVEDYOU.jpg"
+},
+
+{
+  title: "좋아합니다",
+  artist: "DAY6",
+  mood: "새벽감성",
+  file: "music/DAY6_LOVE.mp3",
+  cover: "covers/DAY6_LOVE.jpg"
+},
+
+
+{
+  title: "놓아 놓아 놓아",
+  artist: "DAY6",
+  mood: "새벽감성",
+  file: "music/DAY6_LETTINGGO.mp3",
+  cover: "covers/DAY6_LETTINGGO.jpg"
+},
+
+{
+  title: "그렇더라고요",
+  artist: "DAY6",
+  mood: "새벽감성",
+  file: "music/DAY6_WHEN.mp3",
+  cover: "covers/DAY6_WHEN.jpg"
+},
+{
+  title: "Afraid",
+  artist: "DAY6",
+  mood: "새벽감성",
+  file: "music/DAY6_AFRAID.mp3",
+  cover: "covers/DAY6_AFRAID.jpg"
+},
+
+{
+  title: "예뻤어",
+  artist: "DAY6",
+  mood: "다화",
+  file: "music/DAY6_PRETTY.mp3",
+  cover: "covers/DAY6_PRETTY.jpg"
 }
 
 ];
@@ -16,10 +81,38 @@ audio.src = songs[0].file;
 
 audio.play();
 
+function loadSong(index) {
+
+  const song = filteredSongs[index];
+
+  title.innerText = song.title;
+
+  artist.innerText = song.artist;
+
+  cover.src = song.cover;
+
+  audio.src = song.file;
+}
+
+function playSong() {
+
+  audio.play();
+
+  playBtn.innerText = '⏸';
+}
 
 function selectSong(index) {
   currentSong = index;
   loadSong(index);
+  playSong();
+}
+
+function selectSong(index) {
+
+  currentSong = index;
+
+  loadSong(currentSong);
+
   playSong();
 }
 
@@ -37,6 +130,8 @@ function filterSongs(mood) {
   loadSong(currentSong);
 }
 
+const shuffleBtn = document.getElementById('shuffle-btn');
+
 shuffleBtn.addEventListener('click', () => {
 
   const randomIndex = Math.floor(
@@ -46,6 +141,7 @@ shuffleBtn.addEventListener('click', () => {
   currentSong = randomIndex;
 
   loadSong(currentSong);
+
   playSong();
 });
 
@@ -76,6 +172,33 @@ function autoMoodRecommend() {
   else {
     filterSongs('드라이브');
   }
+}
+
+function renderPlaylist(list) {
+
+  playlist.innerHTML = '';
+
+  list.forEach((song, index) => {
+
+    playlist.innerHTML += `
+
+      <div class="song-card">
+
+        <div class="song-card-left">
+          <img src="${song.cover}">
+
+          <div>
+            <h4>${song.title}</h4>
+            <p>${song.artist} · ${song.mood}</p>
+          </div>
+        </div>
+
+        <button onclick="selectSong(${index})">▶</button>
+
+      </div>
+
+    `;
+  });
 }
 
 autoMoodRecommend();
