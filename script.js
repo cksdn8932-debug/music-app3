@@ -57,6 +57,7 @@ const songs = [
   file: "music/DAY6_WHEN.mp3",
   cover: "covers/DAY6_WHEN.jpg"
 },
+
 {
   title: "Afraid",
   artist: "DAY6",
@@ -66,11 +67,252 @@ const songs = [
 },
 
 {
-  title: "예뻤어",
+  title: "YOU+ME=7942",
+  artist: "TWS",
+  mood: "새벽감성",
+  file: "music/7942.mp3",
+  cover: "covers/7942.jpg"
+},
+
+{
+  title: "Countdown",
+  artist: "DAY6",
+  mood: "새벽감성",
+  file: "music/Countdown.mp3",
+  cover: "covers/Countdown.jpg"
+},
+
+{
+  title: "BFF",
+  artist: "DAY6",
+  mood: "새벽감성",
+  file: "music/BFF.mp3",
+  cover: "covers/BFF.jpg"
+},
+
+
+{
+  title: "Oh Mymy",
+  artist: "DAY6",
+  mood: "새벽감성",
+  file: "music/Oh.mp3",
+  cover: "covers/Oh.jpg"
+},
+
+{
+  title: "Fire Escape",
+  artist: "TWS",
+  mood: "새벽감성",
+  file: "music/fire.mp3",
+  cover: "covers/Fire.jpg"
+},
+
+{
+  title: "한 페이지가 될 수 있게",
+  artist: "DAY6",
+  mood: "기분좋음",
+  file: "music/DAY6_PAGE.mp3",
+  cover: "covers/DAY6_PAGE.jpg"
+},
+
+{
+  title: "내가 S면 넌 나의 N이 되어줘",
+  artist: "TWS",
+  mood: "기분좋음",
+  file: "music/SN.mp3",
+  cover: "covers/SN.jpg"
+},
+
+
+{
+  title: "First hooky",
+  artist: "TWS",
+  mood: "기분좋음",
+  file: "music/First.mp3",
+  cover: "covers/First.jpg"
+},
+
+
+{
+  title: "Double take",
+  artist: "TWS",
+  mood: "드라이브",
+  file: "music/Double.mp3",
+  cover: "covers/Double.jpg"
+},
+
+
+{
+  title: "unplugged boy",
+  artist: "TWS",
+  mood: "드라이브",
+  file: "music/Un.mp3",
+  cover: "covers/Un.jpg"
+},
+
+{
+  title: "마지막 축제",
+  artist: "TWS",
+  mood: "드라이브",
+  file: "music/Last.mp3",
+  cover: "covers/Last.jpg"
+},
+
+{
+  title: "hey! hey!",
+  artist: "TWS",
+  mood: "기분좋음",
+  file: "music/Hey.mp3",
+  cover: "covers/Hey.jpg"
+},
+
+{
+  title: "Best Part",
+  artist: "DAY6",
+  mood: "기분좋음",
+  file: "music/DAY6_BEST.mp3",
+  cover: "covers/BEST.jpg"
+},
+
+{
+  title: "DANCE DANCE",
+  artist: "DAY6",
+  mood: "기분좋음",
+  file: "music/DANCE.mp3",
+  cover: "covers/Dance.jpg"
+},
+
+
+{
+  title: "Freely",
+  artist: "DAY6",
+  mood: "기분좋음",
+  file: "music/Freely.mp3",
+  cover: "covers/Freely.jpg"
+},
+
+{
+  title: "Welcome to the show",
+  artist: "DAY6",
+  mood: "드라이브",
+  file: "music/Welcome.mp3",
+  cover: "covers/Welcome.jpg"
+},
+
+{
+  title: "Why You So Bad?",
+  artist: "TWS",
+  mood: "드라이브",
+  file: "music/why.mp3",
+  cover: "covers/why.jpg"
+},
+
+{
+  title: "한 페이지가 될 수 있게",
+  artist: "DAY6",
+  mood: "기분좋음",
+  file: "music/Time.mp3",
+  cover: "covers/Time.jpg"
+},
+
+
+{
+  title: "널 따라가",
+  artist: "TWS",
+  mood: "기분좋음",
+  file: "music/you.mp3",
+  cover: "covers/you.jpg"
+},
+
+{
+  title: "Get It Now",
+  artist: "TWS",
+  mood: "기분좋음",
+  file: "music/get.mp3",
+  cover: "covers/get.jpg"
+},
+
+{
+  title: "Shoot me",
+  artist: "DAY6",
+  mood: "기분좋음",
+  file: "music/Shoot.mp3",
+  cover: "covers/Shoot.jpg"
+},
+
+{
+  title: "Sweet Chaos",
+  artist: "DAY6",
+  mood: "기분좋음",
+  file: "music/Sweet.mp3",
+  cover: "covers/Sweet.jpg"
+},
+
+{
+  title: "Deep in love",
+  artist: "DAY6",
+  mood: "기분좋음",
+  file: "music/Deep.mp3",
+  cover: "covers/Deep.jpg"
+},
+
+{
+  title: "Zombie",
+  artist: "DAY6",
+  mood: "우울",
+  file: "music/Zombie.mp3",
+  cover: "covers/Zombie.jpg"
+},
+
+{
+  title: "I need somebody",
+  artist: "DAY6",
+  mood: "우울",
+  file: "music/Need.mp3",
+  cover: "covers/Need.jpg"
+},
+
+{
+  title: "Colors",
+  artist: "DAY6",
+  mood: "우울",
+  file: "music/Colors.mp3",
+  cover: "covers/Colors.jpg"
+},
+
+{
+  title: "Still",
+  artist: "DAY6",
+  mood: "우울",
+  file: "music/Still.mp3",
+  cover: "covers/Still.jpg"
+},
+
+
+{
+  title: "BACK TO STRANGERS",
+  artist: "DAY6",
+  mood: "우울",
+  file: "music/back.mp3",
+  cover: "covers/back.jpg"
+},
+
+{
+  title: "다화는 예뻤어",
   artist: "DAY6",
   mood: "다화",
   file: "music/DAY6_PRETTY.mp3",
   cover: "covers/DAY6_PRETTY.jpg"
+}
+
+,
+
+{
+  title: "다화의 모든 가능성이 되어줄게",
+  artist: "TWS",
+  mood: "다화",
+  file: "music/all.mp3",
+  cover: "covers/all.jpg"
 }
 
 ];
